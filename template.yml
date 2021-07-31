@@ -1,0 +1,24 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  lamda local demo
+
+Resources:
+  BinanceAppSqsLambda:
+    Type: AWS::Serverless::Function
+    Properties:
+      Description: Binance app lambda to read sqs messages
+      FunctionName: binance-app-lambda-sqs
+      Role: arn:aws:iam::044977734437:role/binance-app-lambda-sqs
+      Runtime: nodejs14.x
+      CodeUri: 'src'
+      Handler: lambda.handler
+      Events:
+        BinanceQueue:
+          Type: SQS
+          Properties:
+            Queue: arn:aws:sqs:us-east-1:044977734437:BinanceQueue.fifo
+            BatchSize: 10
+      Environment:
+        Variables:
+          BINANCE_APP_URL: https://ceywvn00yf.execute-api.us-east-1.amazonaws.com/dev
