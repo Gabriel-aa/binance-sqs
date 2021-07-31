@@ -3,7 +3,7 @@
     {
       "messageId": "19dd0b57-b21e-4ac1-bd88-01bbb068cb78",
       "receiptHandle": "MessageReceiptHandle",
-      "body": "{\"coin\":\"LINKUSDT\",\"targets\":[22,23,24],\"quantity\":10,\"stop_price\":14,\"stop_limit_price\":14}",
+      "body": "{\"coin\":\"LINKUSDT\",\"targets\":[24,25,26],\"quantity\":10,\"stop_price\":17,\"stop_limit_price\":17}",
       "attributes": {
         "ApproximateReceiveCount": "1",
         "SentTimestamp": "1523232000000",

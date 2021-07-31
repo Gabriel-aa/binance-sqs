@@ -3,7 +3,7 @@ version = 0.1
 [default.deploy]
 [default.deploy.parameters]
 stack_name = "binance-lambda-sqs"
-s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-bvnee32ldeyp"
+s3_bucket = "aws-sam-cli-binance-app-sqs-lambda"
 s3_prefix = "binance-lambda-sqs"
 region = "us-east-1"
 confirm_changeset = true
